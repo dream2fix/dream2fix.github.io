@@ -1,0 +1,2 @@
+RESULT=FAIL; TYPE=gripper; STAGE=keyframe; MODE=force_open; FIX_G=CLOSE; KF_GT=44;
+SUMMARY: Gripper is forced open; at keyframe it is not closed.

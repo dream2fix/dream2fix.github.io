@@ -1,0 +1,1 @@
+move one white object from the right heap to the left, then get the blue-white object and fold it on top of the left heap

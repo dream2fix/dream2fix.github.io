@@ -1,0 +1,364 @@
+:root {
+  --bg: #f6f7f2;
+  --bg-alt: #eef1e6;
+  --card: #ffffff;
+  --ink: #1f2a24;
+  --ink-soft: #516159;
+  --line: #d5ddd0;
+  --brand: #0f766e;
+  --brand-dark: #115e59;
+  --accent: #d97706;
+  --shadow: 0 14px 36px rgba(19, 40, 32, 0.12);
+  --radius: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 10% 0%, rgba(15, 118, 110, 0.12), transparent 36%),
+    radial-gradient(circle at 90% 20%, rgba(217, 119, 6, 0.14), transparent 32%),
+    var(--bg);
+}
+
+.hero-section {
+  padding: 4.6rem 1.25rem 2.4rem;
+  text-align: center;
+}
+
+.project-title {
+  margin: 0 0 1.1rem;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(1.9rem, 4.2vw, 2.55rem);
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+}
+
+.project-title .title-line {
+  display: block;
+  white-space: nowrap;
+}
+
+.project-title {
+  background: linear-gradient(90deg, #0f766e 0%, #0ea5e9 45%, #d97706 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.authors-line {
+  margin: 0 auto;
+  max-width: 960px;
+  font-size: 1.18rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.authors-row {
+  display: block;
+}
+
+.affiliations-line {
+  margin: 1rem auto 0;
+  max-width: 920px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem 0.8rem;
+  justify-content: center;
+  font-size: 1rem;
+  color: var(--ink-soft);
+}
+
+.hero-links {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 0.7rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.action-btn {
+  text-decoration: none;
+  border-radius: 999px;
+  padding: 0.62rem 1.05rem;
+  background: var(--brand);
+  color: #fff;
+  font-weight: 600;
+  transition: transform 0.16s ease, background-color 0.16s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.action-btn:hover {
+  transform: translateY(-1px);
+  background: var(--brand-dark);
+  color: #fff;
+}
+
+.action-btn-light {
+  background: #fff;
+  color: var(--brand-dark);
+  border: 1px solid var(--line);
+}
+
+.btn-with-icon .github-icon {
+  width: 0.95rem;
+  height: 0.95rem;
+  fill: currentColor;
+}
+
+.action-btn-disabled {
+  opacity: 0.72;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.section-block {
+  padding: 2.4rem 1.25rem;
+}
+
+.section-block-alt {
+  background: linear-gradient(180deg, rgba(238, 241, 230, 0.75), rgba(238, 241, 230, 0.4));
+  border-top: 1px solid rgba(31, 42, 36, 0.06);
+  border-bottom: 1px solid rgba(31, 42, 36, 0.06);
+}
+
+.section-head h2 {
+  margin: 0;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(1.4rem, 3.2vw, 2rem);
+}
+
+.section-head p {
+  margin: 0.55rem 0 0;
+  color: var(--ink-soft);
+}
+
+.video-frame {
+  margin-top: 1rem;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--line);
+  background: #fff;
+}
+
+.video-frame video {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.failure-explorer-root {
+  margin-top: 1.25rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.loading-state {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1rem;
+  color: var(--ink-soft);
+}
+
+.failure-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.failure-card-head {
+  padding: 1rem;
+  border-bottom: 1px solid var(--line);
+  background: linear-gradient(90deg, rgba(15, 118, 110, 0.1), rgba(217, 119, 6, 0.08));
+}
+
+.failure-card-head h3 {
+  margin: 0;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.2rem;
+}
+
+.failure-card-head p {
+  margin: 0.4rem 0 0;
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+}
+
+.failure-card-body {
+  padding: 1rem;
+  display: grid;
+  gap: 0.9rem;
+}
+
+.control-row {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.control-row label {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.control-row select {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: #fff;
+  color: var(--ink);
+  padding: 0.58rem 0.65rem;
+  font-size: 0.95rem;
+}
+
+.compare-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+.video-card {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fafcf8;
+}
+
+.video-card .video-label {
+  margin: 0;
+  padding: 0.5rem 0.65rem;
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  border-bottom: 1px solid var(--line);
+}
+
+.video-card video {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.label-block {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #fafcf8;
+  padding: 0.75rem;
+  display: grid;
+  gap: 0.7rem;
+}
+
+.label-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(185px, 1fr));
+  gap: 0.45rem;
+}
+
+.label-item {
+  border-radius: 10px;
+  background: #fff;
+  border: 1px solid var(--line);
+  padding: 0.5rem;
+  line-height: 1.35;
+}
+
+.label-key {
+  display: block;
+  color: var(--ink-soft);
+  font-size: 0.75rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.label-value {
+  display: block;
+  margin-top: 0.2rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  word-break: break-word;
+}
+
+.summary-box {
+  border-left: 3px solid var(--accent);
+  padding: 0.35rem 0 0.35rem 0.6rem;
+  color: var(--ink);
+  font-size: 0.92rem;
+}
+
+.footer-note {
+  padding: 1.6rem 1.25rem 2rem;
+  text-align: center;
+  color: var(--ink-soft);
+}
+
+.scroll-to-top {
+  position: fixed;
+  right: 1.2rem;
+  bottom: 1.2rem;
+  width: 42px;
+  height: 42px;
+  border: none;
+  border-radius: 999px;
+  background: var(--brand);
+  color: #fff;
+  font-size: 1.05rem;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
+}
+
+.scroll-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.scroll-to-top:hover {
+  background: var(--brand-dark);
+}
+
+@media screen and (max-width: 940px) {
+  .authors-line {
+    font-size: 1.02rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-section {
+    padding-top: 3.2rem;
+  }
+
+  .project-title .title-line {
+    white-space: normal;
+  }
+
+  .compare-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .failure-card-head,
+  .failure-card-body {
+    padding: 0.8rem;
+  }
+
+  .section-block {
+    padding: 2rem 0.95rem;
+  }
+}

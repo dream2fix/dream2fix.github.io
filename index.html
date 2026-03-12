@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="title" content="Learning Actionable Manipulation Recovery via Counterfactual Failure Synthesis">
+  <meta name="description" content="Project page for Learning Actionable Manipulation Recovery via Counterfactual Failure Synthesis (Dream2Fix), with interactive failure exploration across four feature types.">
+  <meta name="author" content="Dayou Li, Jiuzhou Lei, Hao Wang, Lulin Liu, Yunhao Yang, Zihan Wang, Bangya Liu, Minghui Zheng, Zhiwen Fan">
+  <meta name="robots" content="index, follow">
+
+  <title>Learning Actionable Manipulation Recovery via Counterfactual Failure Synthesis | Dream2Fix</title>
+
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <script defer src="static/webpage_data/manifest.js"></script>
+  <script defer src="static/js/index.js"></script>
+</head>
+<body>
+  <button class="scroll-to-top" onclick="scrollToTop()" aria-label="Scroll to top">
+    <span>&uarr;</span>
+  </button>
+
+  <main id="main-content">
+    <section class="hero-section">
+      <div class="container is-max-desktop">
+        <h1 class="project-title">
+          <span class="title-line">Learning Actionable Manipulation</span>
+          <span class="title-line">Recovery via Counterfactual Failure Synthesis</span>
+        </h1>
+
+        <div class="authors-line">
+          <div class="authors-row">
+            Dayou Li<sup>1</sup>, Jiuzhou Lei<sup>1</sup>, Hao Wang<sup>1</sup>, Lulin Liu<sup>1,2</sup>, Yunhao Yang<sup>3</sup>
+          </div>
+          <div class="authors-row">
+            Zihan Wang<sup>4</sup>, Bangya Liu<sup>5</sup>, Minghui Zheng<sup>1</sup>, Zhiwen Fan<sup>1</sup>
+          </div>
+        </div>
+
+        <div class="affiliations-line">
+          <span><sup>1</sup>Texas A&amp;M University</span>
+          <span><sup>2</sup>University of Minnesota</span>
+          <span><sup>3</sup>University of Texas at Austin</span>
+          <span><sup>4</sup>Abaka AI</span>
+          <span><sup>5</sup>University of Wisconsin-Madison</span>
+        </div>
+
+        <div class="hero-links">
+          <a class="action-btn" href="static/pdfs/dream2fix.pdf" target="_blank" rel="noopener">ArXiv</a>
+          <span class="action-btn action-btn-light action-btn-disabled btn-with-icon" aria-disabled="true">
+            <svg class="github-icon" viewBox="0 0 16 16" aria-hidden="true">
+              <path d="M8 0a8 8 0 0 0-2.53 15.59c.4.07.55-.17.55-.38v-1.36c-2.23.49-2.7-.95-2.7-.95-.36-.92-.89-1.17-.89-1.17-.73-.5.06-.49.06-.49.8.06 1.23.82 1.23.82.72 1.2 1.87.86 2.33.66.07-.5.28-.86.5-1.06-1.78-.2-3.64-.87-3.64-3.88 0-.85.31-1.54.82-2.09-.08-.2-.36-1.01.08-2.1 0 0 .67-.21 2.2.8a7.73 7.73 0 0 1 4 0c1.53-1.01 2.2-.8 2.2-.8.44 1.09.16 1.9.08 2.1.51.55.82 1.24.82 2.09 0 3.02-1.86 3.67-3.65 3.87.29.25.54.73.54 1.47v2.18c0 .21.14.46.55.38A8 8 0 0 0 8 0Z"></path>
+            </svg>
+            Code (coming soon)
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-block">
+      <div class="container is-max-desktop">
+        <div class="video-frame">
+          <video controls preload="metadata" muted loop playsinline>
+            <source src="static/videos/webpage_demo.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-block section-block-alt" id="failure-explorer">
+      <div class="container is-max-desktop">
+        <div class="section-head">
+          <h2>Interactive Failure Explorer</h2>
+          <p>Select an instruction in each feature type block to compare failed execution and GT success, then inspect its label.</p>
+        </div>
+
+        <div id="failure-explorer-root" class="failure-explorer-root">
+          <div class="loading-state">Loading data...</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer-note">
+    <div class="container is-max-desktop">
+      <p>Dream2Fix Project Page</p>
+    </div>
+  </footer>
+</body>
+</html>

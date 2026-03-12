@@ -1,0 +1,2 @@
+RESULT=FAIL; TYPE=translation; STAGE=pre_grasp; FIX_DIR_X=-x; FIX_N_X=2; FIX_DIR_Y=-y; FIX_N_Y=2;
+SUMMARY: The execution failed due to a translation misalignment before grasping. To fix it, nudge the end-effector in -x for 2 steps and in -y for 2 steps during the final alignment, then retry the grasp.

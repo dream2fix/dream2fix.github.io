@@ -1,0 +1,1 @@
+Remove two coffee cups from the stack at the front and place them on the left.

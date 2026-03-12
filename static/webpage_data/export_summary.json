@@ -1,0 +1,20 @@
+{
+  "gripper_delay_close": {
+    "exported": 100,
+    "available_after_filter": 757,
+    "filter": "instruction does not contain \"close\""
+  },
+  "gripper_force_open": {
+    "exported": 100,
+    "available_after_filter": 1295,
+    "filter": "instruction does not contain \"close\""
+  },
+  "gripper_weak_close": {
+    "exported": 100,
+    "available_after_filter": 765,
+    "filter": "instruction does not contain \"close\""
+  },
+  "translation": {
+    "exported": 100
+  }
+}
